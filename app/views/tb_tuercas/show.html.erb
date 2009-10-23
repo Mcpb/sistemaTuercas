@@ -1,0 +1,33 @@
+<p>
+  <b><%= t('id') %>: </b>
+  <%=h @tb_tuerca.id %>
+</p>
+
+<p>
+  <b><%= t('nombre') %>: </b>
+  <%=h @tb_tuerca.nombre %>
+</p>
+
+<p>
+  <b><%= t('num_lados') %>: </b>
+  <%=h @tb_tuerca.num_lados %>
+</p>
+
+<p>
+  <b><%= t('dimension')%>: </b>
+  <%=h @tb_tuerca.dimension %>
+</p>
+
+<p>
+  <b><%= t('tolerancia')%>: </b>
+  <%=h @tb_tuerca.tolerancia %>
+</p>
+
+<p>
+  <b><%= t('estado')%>: </b>
+  <%=h @tb_tuerca.estado %>
+</p>
+
+
+<%= link_to t('Edit'), edit_tb_tuerca_path(@tb_tuerca) %> |
+<%= link_to t('Back'), tb_tuercas_path %>

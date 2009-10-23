@@ -1,0 +1,30 @@
+<h1><%=t :Listing_tb_tuercas %></h1>
+
+<table>
+  <tr>
+    <th>Id Tuerca</th>
+    <th>Nombre</th>
+    <th>Número de lados</th>
+    <th>Dimensión</th>
+    <th>Tolerancia</th>
+    <th>Estado</th>
+  </tr>
+
+<% @tb_tuercas.each do |tb_tuerca| %>
+  <tr>
+    <td><%=h tb_tuerca.id %></td>
+    <td><%=h tb_tuerca.nombre %></td>
+    <td><%=h tb_tuerca.num_lados %></td>
+    <td><%=h tb_tuerca.dimension %></td>
+    <td><%=h tb_tuerca.tolerancia %></td>
+    <td><%=h tb_tuerca.estado %></td>
+    <td><%= link_to t('Show'), tb_tuerca %></td>
+    <td><%= link_to t('Edit'), edit_tb_tuerca_path(tb_tuerca) %></td>
+    <td><%= link_to t('Destroy'), tb_tuerca, :confirm => t('Are you sure?'), :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to t('New_tb_tuerca'), new_tb_tuerca_path %>

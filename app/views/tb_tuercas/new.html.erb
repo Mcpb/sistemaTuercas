@@ -1,0 +1,31 @@
+<h1><%=t :New_tb_tuerca%></h1>
+
+<% form_for(@tb_tuerca) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label t(:nombre) %><br />
+    <%= f.text_field :nombre %>
+  </p>
+  <p>
+    <%= f.label t(:num_lados) %><br />
+    <%= f.text_field :num_lados %>
+  </p>
+  <p>
+    <%= f.label t(:dimension) %><br />
+    <%= f.text_field :dimension %>
+  </p>
+  <p>
+    <%= f.label t(:tolerancia) %><br />
+    <%= f.text_field :tolerancia %>
+  </p>
+  <p>
+    <%= f.label t(:estado) %><br />
+    <%= f.text_field :estado %>
+  </p>
+  <p>
+    <%= f.submit t('Create') %>
+  </p>
+<% end %>
+
+<%= link_to t('Back'), tb_tuercas_path %>

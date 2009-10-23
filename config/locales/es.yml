@@ -1,0 +1,19 @@
+es:
+   Listing_tb_tuercas: "TIPOS DE TUERCA"
+   Are you sure?: "Esta seguro?"
+   Show: "Mostrar"
+   Edit: Modificar 
+   Destroy: Eliminar 
+   Update: Actualizar
+   New_tb_tuerca: Crear Tipo de Tuerca
+   id: ID
+   nombre: Nombre
+   num_lados: Número de Lados
+   dimension: Dimensión
+   tolerancia: Tolerancia
+   estado: Estado
+   Create: Crear
+   Back: Retornar
+   TbTuerca_was_successfully_created: Tipo de Tuerca Creado Satisfactoriamente
+   TbTuerca_was_successfully_updated: Tipo de Tuerca Actualizado Satisfactoriamente
+   Editing_tb_tuerca : Moficación de Tipo de Tuerca
